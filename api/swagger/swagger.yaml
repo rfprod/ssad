@@ -1,0 +1,91 @@
+swagger: '2.0'
+info:
+  version: '0.0.1'
+  title: Sample Swagger API Documentation
+# during dev, should point to your local machine
+host: localhost:10010
+# basePath prefixes all resource paths
+basePath: /
+# possible protocols
+schemes:
+  - http # comment http to make production-grade
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /hey:
+    x-swagger-router-controller: hey
+    get:
+      summary: Test endpoint
+      description: Sample dummy endpoint for quick demo purpose
+      operationId: hey # method name of the controller
+      parameters:
+        - name: name # parameter name
+          in: query # parameter location
+          description: User name
+          required: false
+          type: string 
+      responses:
+        '200':
+          description: default response
+          schema:
+            $ref: '#/definitions/SuccessResponse'
+  /login:
+    x-swagger-router-controller: login
+    post:
+      summary: User autherntication endpoint
+      description: Reads user input - accepts login and password in request
+        body, returns errors if login does not exist or password does not match
+        provided login, returns token if login exists and password matches
+      operationId: login # method name of the controller
+      parameters:
+        - name: body
+          in: body
+          description: Registered user credentials
+          required: true
+          schema:
+            $ref: '#/definitions/UserCredentials' # a pointer to a definition
+      responses:
+        '200':
+          description: Success - login exists, password matches login
+          schema:
+            $ref: '#/definitions/SuccessResponse' # a pointer to a definition
+        '400':
+          description: Error - login or password missing, login does not exist
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '401':
+          description: Error - wrong password
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /swagger:
+    x-swagger-pipe: swagger_raw
+# complex objects have schema definitions
+definitions:
+  UserCredentials:
+    description: Registered user credentials
+    properties:
+      login:
+        type: string
+        description: registered user login
+      password:
+        type: string
+        description: registered user password
+  SuccessResponse:
+    description: Response on successful request
+    required:
+      - message
+    properties:
+      message:
+        type: string
+  ErrorResponse:
+    description: Response on unsuccessful request
+    required:
+      - message
+    properties:
+      message:
+        type: string
