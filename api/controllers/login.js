@@ -15,18 +15,15 @@ const util = require('util');
 const jwtMethods = require('../helpers/jwt-methods');
 
 /*
+*	mocks
+*/
+const userData = require('../mocks/user-data').userData;
+
+/*
 *	method(s) this module exports
 */
 module.exports = {
 	login: login
-};
-
-/*
-*	existing user credentials
-*/
-const userData = {
-	user1: 'password1',
-	user2: 'password2'
 };
 
 /*
