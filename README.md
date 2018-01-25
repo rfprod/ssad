@@ -9,9 +9,9 @@
 	* `./api/swagger` - swagger api specification
 * `./config` - configuration files
 * `./test` - tests root
-	* `./test/api/controlers` - tests for api controllers
-	* `./test/api/helpers` - tests for api helpers
-	* `./test/api/mocks` - tests api mocks
+	* `./test/api/controlers` - api controllers tests
+	* `./test/api/helpers` - api helpers tests
+	* `./test/api/mocks` - api mocks tests
 
 ## Installation and Startup
 

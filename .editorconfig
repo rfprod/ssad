@@ -3,13 +3,15 @@
 # top-most EditorConfig file
 root = true
 
-# Unix-style newlines with a newline ending every file
-[*.{js,html,css,scss,json,sh}]
-end_of_line = lf
-insert_final_newline = true
-
-[*.{yml,yaml}]
+[*]
 trim_trailing_whitespace = true
+
+# Unix-style newlines with a newline ending every file except .json
+[*]
+end_of_line = lf
+#insert_final_newline = true
+[*.{js,ts,html,css,scss,sh,eslintignore,gitignore}]
+insert_final_newline = true
 
 # Matches multiple files with brace expansion notation
 # Default charset
