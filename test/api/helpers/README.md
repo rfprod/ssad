@@ -1,1 +1,1 @@
-Place your helper tests in this directory.
+Place helper tests in this directory.

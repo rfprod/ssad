@@ -1,1 +1,1 @@
-Place your mocks tests in this directory.
+Place data mocks tests in this directory.

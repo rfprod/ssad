@@ -1,1 +1,1 @@
-Place controllers for mock mode in this directory.
+Place data mocks in this directory.

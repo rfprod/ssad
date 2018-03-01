@@ -1,1 +1,1 @@
-Place helper files in this directory.
+Place helpers in this directory.
