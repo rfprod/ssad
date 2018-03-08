@@ -67,4 +67,4 @@ the latter will not install depedencies if missing which may produce an error
 
 ## Licenses
 
-* [`SSAD`](LICENSE.md)
+* [`SSAD`](LICENSE)
