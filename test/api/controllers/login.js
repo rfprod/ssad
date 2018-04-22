@@ -95,7 +95,7 @@ describe('controllers', function() {
 				});
 		});
 
-		it('should accept return token if provide login exists and provided password matches it', function() {
+		it('should return token if provide login exists and provided password matches it', function() {
 
 			request(server)
 				.post('/login')
