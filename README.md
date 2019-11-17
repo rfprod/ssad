@@ -2,16 +2,15 @@
 
 ## Project structure
 
-* `./api` - api root
-	* `./api/controlers` - api controllers
-	* `./api/helpers` - api helpers
-	* `./api/mocks` - api mocks
-	* `./api/swagger` - swagger api specification
-* `./config` - configuration files
-* `./test` - tests root
-	* `./test/api/controlers` - api controllers tests
-	* `./test/api/helpers` - api helpers tests
-	* `./test/api/mocks` - api mocks tests
+- `./api` - api root
+  _ `./api/controlers` - api controllers
+  _ `./api/helpers` - api helpers
+  _ `./api/mocks` - api mocks
+  _ `./api/swagger` - swagger api specification
+- `./config` - configuration files
+- `./test` - tests root
+  _ `./test/api/controlers` - api controllers tests
+  _ `./test/api/helpers` - api helpers tests \* `./test/api/mocks` - api mocks tests
 
 ## Installation and Startup
 
@@ -67,4 +66,4 @@ the latter will not install depedencies if missing which may produce an error
 
 ## Licenses
 
-* [`SSAD`](LICENSE)
+- [`SSAD`](LICENSE)

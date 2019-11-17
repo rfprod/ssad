@@ -20,12 +20,12 @@ charset = utf-8
 
 # 4 tabs indentation for markup and css
 [*.{html,css,scss}]
-indent_style = tab
+indent_style = space
 indent_size = 4
 
 # 2 tabs indentation for code
 [*.{js,json,sh,bowerrc,md}]
-indent_style = tab
+indent_style = space
 indent_size = 2
 
 # 2 space indentation for code

@@ -1,6 +1,6 @@
-swagger: '2.0'
+swagger: "2.0"
 info:
-  version: '0.0.1'
+  version: "0.0.1"
   title: Sample Swagger API Documentation
 # during dev, should point to your local machine
 host: localhost:10010
@@ -28,12 +28,12 @@ paths:
           in: query # parameter location
           description: User name
           required: false
-          type: string 
+          type: string
       responses:
-        '200':
+        "200":
           description: default response
           schema:
-            $ref: '#/definitions/SuccessResponse'
+            $ref: "#/definitions/SuccessResponse"
   /login:
     x-swagger-router-controller: login
     post:
@@ -48,20 +48,20 @@ paths:
           description: Registered user credentials
           required: true
           schema:
-            $ref: '#/definitions/UserCredentials' # a pointer to a definition
+            $ref: "#/definitions/UserCredentials" # a pointer to a definition
       responses:
-        '200':
+        "200":
           description: Success - login exists, password matches login
           schema:
-            $ref: '#/definitions/SuccessResponse' # a pointer to a definition
-        '400':
+            $ref: "#/definitions/SuccessResponse" # a pointer to a definition
+        "400":
           description: Error - login or password missing, login does not exist
           schema:
-            $ref: '#/definitions/ErrorResponse'
-        '401':
+            $ref: "#/definitions/ErrorResponse"
+        "401":
           description: Error - wrong password
           schema:
-            $ref: '#/definitions/ErrorResponse'
+            $ref: "#/definitions/ErrorResponse"
   /swagger:
     x-swagger-pipe: swagger_raw
 # complex objects have schema definitions

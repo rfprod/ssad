@@ -1,37 +1,37 @@
 {
-	"name": "sample-swagger-api-doc",
-	"version": "0.0.1",
-	"private": true,
-	"description": "Sample Swagger API Documentation",
-	"repository": "https://github.com/rfprod/ssad",
-	"bugs": "https://github.com/rfprod/ssad/issues",
-	"keywords": [
-		"swagger",
-		"rest",
-		"api",
-		"documentation",
-		"example",
-		"javascript",
-		"yaml"
-	],
-	"author": "rfprod",
-	"license": "MIT",
-	"main": "server.js",
-	"dependencies": {
-		"body-parser": "^1.18.2",
-		"chai": "^4.1.2",
-		"express": "^4.16.3",
-		"jwt-simple": "^0.5.1",
-		"swagger-express-mw": "^0.7.0"
-	},
-	"devDependencies": {
-		"supertest": "^3.0.0"
-	},
-	"scripts": {
-		"prestart": "npm install",
-		"start": "swagger project start",
-		"pretest": "npm install",
-		"test": "swagger project test",
-		"edit": "swagger project edit"
-	}
+  "name": "sample-swagger-api-doc",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Sample Swagger API Documentation",
+  "repository": "https://github.com/rfprod/ssad",
+  "bugs": "https://github.com/rfprod/ssad/issues",
+  "keywords": [
+    "swagger",
+    "rest",
+    "api",
+    "documentation",
+    "example",
+    "javascript",
+    "yaml"
+  ],
+  "author": "rfprod",
+  "license": "MIT",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "jwt-simple": "^0.5.6",
+    "swagger-express-mw": "^0.7.0"
+  },
+  "devDependencies": {
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "swagger project start",
+    "pretest": "npm install",
+    "test": "swagger project test",
+    "edit": "swagger project edit"
+  }
 }
